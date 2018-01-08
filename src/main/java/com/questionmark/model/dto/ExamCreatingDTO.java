@@ -9,19 +9,16 @@ import java.time.LocalDateTime;
 
 @Getter
 @Setter
-
 public class ExamCreatingDTO {
-	
-	@NotNull
-	private String title;
-	
-	@NotNull
-	private String description;
-	
+    @NotNull
+    private String title;
+
+    @NotNull
+    private String description;
+
     @JsonIgnore
     private final LocalDateTime createdAt = LocalDateTime.now();
 
     @JsonIgnore
-    private final LocalDateTime editedAt = LocalDateTime.now(); 
-	
+    private final LocalDateTime editedAt = LocalDateTime.now();
 }
