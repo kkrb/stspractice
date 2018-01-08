@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/exams-new")
+@RequestMapping("/exams")
 public class ExamRestController {
     private ExamRepository examRepository;
 
